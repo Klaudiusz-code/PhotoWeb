@@ -1,59 +1,25 @@
 import React from 'react';
-import { BiArrowToRight } from 'react-icons/bi';
-import {getSingleElementValue} from "@testing-library/jest-dom/dist/utils";
+import { AiOutlineClose } from "react-icons/ai";
 
 const MobileMenu = ({ isMenuOpen, onClose }) => {
-    const menuClasses = `flex fixed top-0 -right-2 transition-transform duration-200 ${
-        isMenuOpen ? 'transform translate-x-0' : 'transform translate-x-full'
-    }`;
-
     return (
-        <div className={menuClasses}>
-            <div className='bg-pink-400 h-screen lg:max-w-2xl p-5 pt-8 w-72'>
-                <BiArrowToRight
-                    className='absolute -left-3 top-2/4 text-pink-400 font-medium bg-white rounded-full h-10 w-10 cursor-pointer'
-                    onClick={onClose}
-                />
-                <div className="flex justify-center flex-col items-center">
-                    <h1 className="text-2xl text-white">Menu</h1>
-                    <div className="flex flex-wrap items-center">
-                        <ul>
-                            <li>
-                                test
-                            </li>
-                            <li>
-                                 test
-                            </li>
-                            <li>
-                              test
-                            </li>
-                            <li>
-                               test
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${isMenuOpen ? "-translate-y-0" : "-translate-y-full"} transition-transform duration-200 ease-in-out filter  `}>
+            <div className="flex flex-col justify-center items-center mt-28">
+                <li className="text-2xl font-bold text-light-coral my-4 list-none cursor-pointer">
+                    Home
+                </li>
+                <li className="text-2xl font-bold text-light-coral my-4 list-none cursor-pointer">
+                    About me
+                </li>
+                <li className="text-2xl font-bold text-light-coral my-4 list-none cursor-pointer">
+                    Contact
+                </li>
+                <button className="text-2xl font-bold my-4 hover:text-light-coral fixed right-10 top-0" onClick={onClose}>
+                    <AiOutlineClose/>
+                </button>
             </div>
         </div>
-    );
+    )
 };
-export default MobileMenu
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default MobileMenu;
