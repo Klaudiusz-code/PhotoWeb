@@ -10,7 +10,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className='container w-full mx-auto flex items-center justify-between p-4'>
+        <nav className='w-full mx-auto flex items-center justify-between p-4'>
             <div className='max-w-[200px]'>
                 <h1 className="text-2xl">Logo</h1>
             </div>
