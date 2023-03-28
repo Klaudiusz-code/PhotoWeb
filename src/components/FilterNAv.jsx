@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const FilterNav = () => {
     return (
-        <nav className='w-full fixed bottom-3 lg:bottom-10 overflow-hidden z-10'>
+        <nav className='w-full fixed bottom-3 lg:bottom-10 overflow-hidden z-30'>
             <div className="container mx-auto py-2">
                 <div className="bg-black/80 max-w-[500px] mx-auto shadow-md lg:flex lg:justify-center rounded-xl sm:flex p-3">
                     <li className="list-none px-3 lg:px-8 cursor-pointer">
