@@ -18,7 +18,6 @@ const MobileMenu = ({ isMenuOpen, onClose }) => {
                             <Link to={link.link} onClick={onClose}>{link.name}</Link>
                         </li>
                     )
-
                 })}
                 <button className="text-2xl font-bold my-4 hover:text-light-coral fixed right-10 top-0" onClick={onClose}>
                     <AiOutlineClose/>
