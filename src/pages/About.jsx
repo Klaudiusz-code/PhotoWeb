@@ -7,7 +7,7 @@ const About = () => {
         <div className="container h-screen py-2 mx-auto">
             <div className="w-full flex justify-between items-center lg:flex-row lg:mt-20 md:flex-row md:mt-5 sm:flex-col mob:flex-col mob:mt-2">
                 <div className="lg:w-[50%]">
-                    <img src="/photo.png" className="lg:w-[100%] md:w-[60%] rounded-lg rotate-1" alt=""/>
+                    <img src="/photo.png" className="lg:w-[100%] md:w-[60%] rounded-lg lg:rotate-1 md:rotate-0 mob:rotate-0" alt=""/>
                 </div>
                 <div className="lg:w-[30%] md:w-full mob:w-full">
                     <div>
