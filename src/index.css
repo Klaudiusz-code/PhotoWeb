@@ -14,7 +14,10 @@
         inset 0px 0px 0px 0px #fff9,
         inset 0px 0px 0px 0px #0001;
     }
-    .text-light-coral{
+    .text-dark-coral{
         color: #f08080;
+    }
+    .text-light-coral{
+        color: #e38d8d;
     }
 }
