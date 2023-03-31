@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="flex items-center items-center">
                 <h2 className="mr-3 font-semibold text-sm text-light-coral">Menu</h2>
                 <button
-                    className='text-2xl cursor-pointer bx-sh rounded-b-md text-light-coral p-2'
+                    className='text-2xl cursor-pointer bx-sh rounded-b-md text-dark-coral p-2'
                     onClick={toggleMenu}
                 >
                     <FiAlignJustify />
