@@ -25,7 +25,7 @@ const Contact = () => {
 
 
     return (
-        <div className="container mx-auto h-screen">
+        <div className="container mx-auto min-h-screen">
             <div className="mb-10">
                 <h1 className="text-5xl mt-8 mb-5 text-center text-dark-coral font-bold">Contact</h1>
                 <p className="text-center text-2xl mt-16 font-thin text-dark-coral tracking-wide">
